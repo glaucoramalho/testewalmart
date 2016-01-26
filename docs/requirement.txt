@@ -1,0 +1,30 @@
+Criação de Projeto de Testes Automatizados ­ BDD com cucumber 
+O objetivo é criar um projeto de automação versionado no Github (#
+https://github.com/#), utilizando Cucumber, Capybara e HTTParty para automatizar cenários para as duas Features abaixo: 
+1 ­#- No site do walmart.com.br, realizar a seguinte sequência de ações: 
+# Procurar pelo termo "tv" na busca 
+# Validar que a busca teve resultados 
+# Clicar em um dos resultados e validar que a página do produto abriu corretamente 
+# Adicionar o Produto ao carrinho 
+# Abrir o carrinho e validar que o mesmo foi adicionado com sucesso 
+# Realizar o login com sucesso (mas como desafio e também boa prática, não se deve colocar o usuario 
+e senha no codigo do teste. Esses valores devem ser dinâmicos, sendo passados na hora que 
+dispararmos a execução do teste). 
+# DESAFIO: Utilizar o conceito de Page Objects na automação!!! 
+ 
+2 -# Dado a API http://jsonplaceholder.typicode.com/ que permite criar posts e comentários, criaremos testes 
+para suas principais funcionalidades. Crie uma nova feature para cada método da API que iremos testar: 
+A API que utilizaremos é uma API de teste, os recursos não são criado e alterados realmente, então valide as 
+operações através do response da API: 
+# Buscar posts existentes. Faça um cenário na feature para cada um dos critérios abaixo da 
+especificação de funcionamento da API: 
+# A API permite obter uma lista com todos os posts existentes# 
+# A API permite buscar os detalhes de cada post através do seu ID  
+# Quando houver uma busca por um post (id) inexistente, a API deve ser possuir um tratamento de erro 
+(retornar 404).  
+# Criar novo post. Crie um cenário de sucesso para a especificação abaixo: 
+# A API permite criar um novo post, passando titulo, corpo e id do usuário 
+# Deletar post. Crie um cenário para cada um dos critérios: 
+# A API permite deletar um post através do seu ID 
+# A API possui tratamento quando se tenta deletar um post inexistente (404) 
+# Alterar um post. Crie um cenário para alterar o título de um post existente. 
